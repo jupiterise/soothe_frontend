@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      SootheAPP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-list>
+  <ion-item>
+    <ion-label>Pet</ion-label>
+    <ion-select formControlName="pet">
+      <ion-option *ngFor="let pet of pets" [value]="pet">{{pet}}</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
